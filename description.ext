@@ -1,0 +1,18 @@
+respawnOnStart = -1;
+
+OnLoadName = "Operation Silver Stack";
+OnLoadMission = "China has invaded and started fortifying the island chain of Pulau to keep other countries out of the South China Sea."
+Author="Task Force Red by (Nichols)";
+overviewPicture = "";
+
+enableDebugConsole = 1;
+cba_settings_hasSettingsFile = 1;
+
+class CfgFunctions 
+{
+	#include "vcom\cfgFunctions.hpp"
+};
+
+class Extended_PreInit_EventHandlers {
+	VCM_CBASettings = call compile preprocessFileLineNumbers "Vcom\Functions\VCM_CBASettings.sqf";
+};
